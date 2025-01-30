@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Capitalize Name</title>
   </head>
   <body>
-    Enter your name: <input type="text" id="fname">
-    
+    <label for="fname">Enter your name:</label>
+    <input type="text" id="fname">
+
     <script type="text/javascript">
       let user = document.querySelector("#fname");
-	    user.addEventListener("input", () => {
-	    user.value = user.value.toUpperCase();
+      user.addEventListener("input", () => {
+        user.value = user.value.toUpperCase();
       });
     </script>
   </body>
